@@ -13,7 +13,7 @@ export default function Dashboard() {
             <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
               Unlock Knowledge, No Strings Attached
             </h1>
-            <p className={`text-xl text-gray-500`}>
+            <p className={`text-base md:text-xl text-gray-500`}>
               Discover and download high-quality notes from the top students at
               Haldia Institute of Technology, all in one place, and completely
               anonymous. Empowering you to excel without boundaries.

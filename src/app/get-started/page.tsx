@@ -26,7 +26,7 @@ export default function SubjectsPage() {
         {subjects.map((subject) => (
           <div
             key={subject.code}
-            className="bg-white rounded-lg p-6 transition-all duration-300 hover:bg-gray-50"
+            className="bg-white rounded-lg p-2 sm:p-4 md:p-6 transition-all duration-300 hover:bg-gray-50"
           >
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center">

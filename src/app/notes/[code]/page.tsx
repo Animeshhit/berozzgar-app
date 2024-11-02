@@ -90,7 +90,7 @@ export default async function SubjectNotesPage({
             {notes.map((note: NotesData) => (
               <div
                 key={note._id}
-                className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-300"
+                className="border border-gray-200 rounded-lg p-2 sm:p-4 hover:bg-gray-50 transition-colors duration-300"
               >
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center w-3/5 md:w-full">

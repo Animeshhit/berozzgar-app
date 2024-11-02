@@ -5,6 +5,7 @@ import Link from "next/link";
 import { client } from "@/sanity/client";
 import { groq } from "next-sanity";
 import React from "react";
+import subjects from "@/lib/subjects";
 
 interface NotesData {
   topic: string;
@@ -61,6 +62,8 @@ export default async function SubjectNotesPage({
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
 
+  const subjectDetails = subjects.find((s) => s.code == code);
+
   return (
     <div className="min-h-screen bg-white p-4 sm:p-6 flex flex-col items-center">
       <div className="w-full max-w-2xl">
@@ -71,9 +74,9 @@ export default async function SubjectNotesPage({
           </Button>
         </Link>
 
-        <h1 className="text-3xl font-bold text-gray-900 mb-6">
-          Notes for {code}
-        </h1>
+        {subjectDetails && (
+          <h1 className="text-lg md:text-xl lg:text-3xl font-bold text-gray-900 mb-6">{`Notes For ${subjectDetails.name}`}</h1>
+        )}
 
         <Input
           type="text"

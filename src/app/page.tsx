@@ -9,7 +9,7 @@ export default function Dashboard() {
     <>
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 text-center sm:text-left">
             <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
               Unlock Knowledge, No Strings Attached
             </h1>
@@ -20,7 +20,7 @@ export default function Dashboard() {
             </p>
             <div>
               <Link className="inline-block" href="/get-started">
-                <Button size="lg" className="text-sm px-4 py-3">
+                <Button size="lg" className="text-base p-6">
                   Get Started
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

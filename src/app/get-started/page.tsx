@@ -30,8 +30,7 @@ export default function SubjectsPage() {
               </span>
             </div>
             <div className="flex items-center text-sm text-gray-500">
-              <Clock className="h-4 w-4 mr-1" />
-              Last updated: 24/09/2024
+              <p>Comprehensive Notes with Topic Insights & Problem Solutions</p>
             </div>
             <Link className="block" href={`/notes/${subject.code}`}>
               <Button className="w-full mt-4" variant="outline">

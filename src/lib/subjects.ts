@@ -8,6 +8,7 @@ const subjects = [
   { name: "POWER SYSTEM-I LABORATORY", code: "PC-EE-592" },
   { name: "CONTROL SYSTEM LABORATORY", code: "PC-EE-593" },
   { name: "Data Structure and Algorithm Lab", code: "OE-EE-591A" },
+  { name: "Economics for Engineers", code: "HM-EE-501" },
 ];
 
 export default subjects;

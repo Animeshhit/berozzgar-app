@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer className="bg-blue-600">
-      <div className="container mx-auto py-2">
+      <div className="container mx-auto py-2 px-3">
         <p className="text-xs text-center text-white">
           Created & Powered By{" "}
           <a href="https://www.linkedin.com/in/sourav-majee/">Sourav Majee</a>,{" "}

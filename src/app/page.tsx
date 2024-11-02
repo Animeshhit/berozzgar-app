@@ -11,12 +11,12 @@ export default function Dashboard() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-              Organize your thoughts with ease
+              Unlock Knowledge, No Strings Attached
             </h1>
             <p className={`text-xl text-gray-500`}>
-              NoteHub helps you capture, organize, and share your ideas
-              effortlessly. Take notes, create to-do lists, and collaborate with
-              your team in real-time.
+              Discover and download high-quality notes from the top students at
+              Haldia Institute of Technology, all in one place, and completely
+              anonymous. Empowering you to excel without boundaries.
             </p>
             <div>
               <Link className="inline-block" href="/get-started">

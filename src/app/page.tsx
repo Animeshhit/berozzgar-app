@@ -55,7 +55,7 @@ export default function Dashboard() {
                   </svg>
                 </Button>
               </Link>
-              <a className="inline-block" href="/get-started">
+              <a className="inline-block" href="#admin">
                 <Button
                   size="lg"
                   variant="outline"
@@ -79,7 +79,10 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section
+        id="admin"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20"
+      >
         <div className="flex flex-col items-center space-y-4 text-center">
           <h2 className="text-4xl font-extrabold sm:text-5xl sm:tracking-tight lg:text-6xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
             Get Admin Access

@@ -4,8 +4,10 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { client } from "@/sanity/client";
 import { groq } from "next-sanity";
-import React from "react";
+import React, { Suspense } from "react";
 import subjects from "@/lib/subjects";
+// import Size from "@/components/Size";
+import dynamic from "next/dynamic";
 
 interface NotesData {
   topic: string;
@@ -30,6 +32,10 @@ const query = groq`
     publishedAt
   }
 `;
+
+const FileSizeCompo = dynamic(() => import("../../../components/Size"), {
+  loading: () => <p>Loading...</p>,
+});
 
 export default async function SubjectNotesPage({
   params,
@@ -127,7 +133,7 @@ export default async function SubjectNotesPage({
                     <HardDrive className="h-4 w-4 mr-1" />
                     {/* Assuming note size logic to be implemented */}
                     <span className="text-xs md:text-sm lg:text-base">
-                      {formatFileSize(240000)}
+                      <FileSizeCompo url={note.noteFile.asset.url} />
                     </span>
                   </span>
                 </div>
@@ -144,10 +150,3 @@ export default async function SubjectNotesPage({
     </div>
   );
 }
-
-// Utility function to format file size
-const formatFileSize = (bytes: number) => {
-  if (bytes < 1024) return bytes + " B";
-  else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + " KB";
-  else return (bytes / 1048576).toFixed(1) + " MB";
-};

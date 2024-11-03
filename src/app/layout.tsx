@@ -28,8 +28,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
-        <NextTopLoader color="red" height={1} showSpinner={false} />
+      <body className={`${inter.className} bg-zinc-900 antialiased`}>
+        <NextTopLoader color="red" height={2} showSpinner={false} />
         <Subheader />
         <Navbar />
         <main>{children}</main>

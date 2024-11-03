@@ -30,7 +30,7 @@ export default async function UserAvatar() {
           await signIn();
         }}
       >
-        <Button variant="ghost" className="flex items-center gap-2" type="submit">
+        <Button variant="ghost" className="flex text-white items-center gap-2" type="submit">
           Sign in
           <LogIn />
         </Button>
@@ -47,7 +47,7 @@ export default async function UserAvatar() {
       >
         <Button
           variant="ghost"
-          className="hidden md:flex items-center gap-2"
+          className="hidden text-white md:flex items-center gap-2"
           type="submit"
         >
           Sign Out

@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { client } from "@/sanity/client";
 import { groq } from "next-sanity";
-import React, { Suspense } from "react";
+import React from "react";
 import subjects from "@/lib/subjects";
 // import Size from "@/components/Size";
 import dynamic from "next/dynamic";

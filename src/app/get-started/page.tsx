@@ -8,13 +8,7 @@ import subjects from "@/lib/subjects";
 
 export default function SubjectsPage() {
   return (
-    <section
-      className="relative flex py-12 justify-start text-start bg-cover bg-center bg-blend-multiply"
-      style={{
-        backgroundImage: `url('/blur.avif')`,
-        backgroundColor: "rgba(0, 0, 0, 0.8)", // Adds a dark overlay to blend with
-      }}
-    >
+    <section className="relative flex py-12 justify-start text-start grad">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-bold text-3xl mb-6 bg-gradient-to-r from-white to-gray-600 bg-clip-text text-transparent">
           Available Subjects
